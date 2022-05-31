@@ -1,8 +1,19 @@
 # Getting Started with Create React App
 
+# [Live app](https://blagoja95.github.io/image-galery-pixabayAPI-tailwind-react/)
+
+## TO DO
+  1. Overlay with full size view of selected / clicked image
+  2. search bar sugestion
+  3. Better design for inner card elements
+  4. Better Desktop version
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+Start with `npm install` then
 
 In the project directory, you can run:
 
