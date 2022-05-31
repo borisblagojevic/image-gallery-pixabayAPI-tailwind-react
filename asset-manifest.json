@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/image-galery-pixabayAPI-tailwind-react/static/css/main.278d6bc8.css",
+    "main.js": "/image-galery-pixabayAPI-tailwind-react/static/js/main.761e20b6.js",
+    "index.html": "/image-galery-pixabayAPI-tailwind-react/index.html",
+    "main.278d6bc8.css.map": "/image-galery-pixabayAPI-tailwind-react/static/css/main.278d6bc8.css.map",
+    "main.761e20b6.js.map": "/image-galery-pixabayAPI-tailwind-react/static/js/main.761e20b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.278d6bc8.css",
+    "static/js/main.761e20b6.js"
+  ]
+}
