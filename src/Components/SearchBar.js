@@ -8,9 +8,9 @@ const SearchBar = ({ getText }) => {
   };
 
   return (
-    <div className="max-w-sm rounded overflow-hidden my-10 mx-auto">
-      <form onSubmit={handleSubmit} className="w-full max-w-sm">
-        <div className="flex items-center border-b border-b-2 border-teal-500 py-2">
+    <div className="xl:max-w-xl max-w-sm rounded overflow-hidden my-10 mx-auto sm:px-1">
+      <form onSubmit={handleSubmit} className="w-full xl:max-w-xl max-w-sm">
+        <div className="flex items-center border-b-2 border-teal-500 py-2">
           <input
             onChange={(e) => setText(e.target.value)}
             type="text"
