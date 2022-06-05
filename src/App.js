@@ -8,10 +8,11 @@ function App() {
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [term, setTerm] = useState("");
+  const [selectedType, setSelectedTerm] = useState("");
 
   useEffect(() => {
     fetch(
-      `https://pixabay.com/api/?key=${PIXABAY_API_KEY}&q=${term}&image_type=photo&pretty=true`
+      `https://pixabay.com/api/?key=${PIXABAY_API_KEY}&q=${term}&image_type=${selectedType}&pretty=true`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -20,11 +21,14 @@ function App() {
       })
       .catch((err) => console.error(err));
     console.log(term);
-  }, [term]);
+  }, [term, selectedType]);
 
   return (
     <div className="container mx-auto p-4">
-      <SearchBar getText={(text) => setTerm(text)} />
+      <SearchBar
+        getText={(text) => setTerm(text)}
+        getType={(type) => setSelectedTerm(type)}
+      />
 
       {!isLoading && images.length === 0 && (
         <h1 className="text-6xl text-center mx-auto">
@@ -37,7 +41,7 @@ function App() {
       ) : (
         <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 justify-items-center gap-4">
           {images.map((img) => (
-            <ResultCard key={img.id} img={img} />
+            <ResultCard key={img.id} img={img} type={selectedType} />
           ))}
         </div>
       )}
