@@ -8,6 +8,11 @@
   3. Better design for inner card elements
   4. Better Desktop version
 
+# MADE WITH:
+
+  1. REACT
+  2. TAILWINDCSS
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
