@@ -12,7 +12,7 @@
 
   1. REACT
   2. TAILWINDCSS
-
+  3. [PIXABAY API](https://pixabay.com/api/docs/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
