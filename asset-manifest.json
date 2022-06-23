@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/image-galery-pixabayAPI-tailwind-react/static/css/main.84a5711b.css",
-    "main.js": "/image-galery-pixabayAPI-tailwind-react/static/js/main.1cf6d028.js",
+    "main.css": "/image-galery-pixabayAPI-tailwind-react/static/css/main.45f88941.css",
+    "main.js": "/image-galery-pixabayAPI-tailwind-react/static/js/main.6a32a751.js",
     "index.html": "/image-galery-pixabayAPI-tailwind-react/index.html",
-    "main.84a5711b.css.map": "/image-galery-pixabayAPI-tailwind-react/static/css/main.84a5711b.css.map",
-    "main.1cf6d028.js.map": "/image-galery-pixabayAPI-tailwind-react/static/js/main.1cf6d028.js.map"
+    "main.45f88941.css.map": "/image-galery-pixabayAPI-tailwind-react/static/css/main.45f88941.css.map",
+    "main.6a32a751.js.map": "/image-galery-pixabayAPI-tailwind-react/static/js/main.6a32a751.js.map"
   },
   "entrypoints": [
-    "static/css/main.84a5711b.css",
-    "static/js/main.1cf6d028.js"
+    "static/css/main.45f88941.css",
+    "static/js/main.6a32a751.js"
   ]
 }
