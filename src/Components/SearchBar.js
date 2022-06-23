@@ -26,7 +26,7 @@ const SearchBar = ({ getText, getType }) => {
             className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
           />
 
-          <select onChange={handleSelect}>
+          <select onChange={handleSelect} className="bg-transparent mr-2">
             <option value="all">All</option>
             <option value="photo">Photos</option>
             <option value="illustration">Illustrations</option>

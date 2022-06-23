@@ -20,16 +20,22 @@ const ResultCard = ({ img, type }) => {
 
   if (type === img.type || type === "vector" || type === "all")
     return (
-      <div className="max-w-sm h-fit pb-4 rounded overflow-hidden shadow-lg">
-        <img src={img.webformatURL} alt="" className="w-full" />
-        <spam
+      <div className="relative max-w-sm h-fit pb-4 rounded overflow-hidden shadow-lg">
+        <figure className="overflow-hidden transi">
+          <img
+            src={img.webformatURL}
+            alt=""
+            className="w-full hover:duration-200 hover:ease-in hover:scale-150 hover:cursor-zoom-in hover:opacity-50"
+          />
+        </figure>
+        <span
           className={
-            "py-2 px-4  text-md font-semibold capitalize rounded " +
+            "absolute z-1 -translate-y-6 py-2 px-4 text-md font-semibold capitalize rounded " +
             `${handleBG(img.type)}`
           }
         >
           {img.type}
-        </spam>
+        </span>
         <Tags tags={img.tags.split(",")} />
 
         <div className="px-6 py-4 text-xs">
