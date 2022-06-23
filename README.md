@@ -1,18 +1,16 @@
-# Getting Started with Create React App
+# IMAGE GALLERY W/ PIXABAY API
 
-# [Live app](https://blagoja95.github.io/image-galery-pixabayAPI-tailwind-react/)
+# [Live app](https://blagoja95.github.io/image-gallery-pixabayAPI-tailwind-react/)
 
-## TO DO
-  1. Overlay with full size view of selected / clicked image
-  2. search bar sugestion
-  3. Better design for inner card elements
-  4. Better Desktop version
+## ABOUT
+
+This application allows its user to search the enormous amount of images using powerfull Pixabay API. Users can search any image by typing in a desired keyword like 'cats' or 'cars' and the get a list of images present that to the user as a card with image and data about that image. Filter those search results by selecting the type of image like photos, vectors and illustrations.
 
 # MADE WITH:
 
-  1. REACT
-  2. TAILWINDCSS
-  3. [PIXABAY API](https://pixabay.com/api/docs/)
+1. REACT
+2. TAILWINDCSS
+3. [PIXABAY API](https://pixabay.com/api/docs/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
