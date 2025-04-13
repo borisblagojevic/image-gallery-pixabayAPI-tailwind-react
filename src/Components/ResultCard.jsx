@@ -1,5 +1,5 @@
 import React from "react";
-import Tags from "./Tags";
+import Tags from "./Tags.jsx";
 
 const ResultCard = ({ img, type }) => {
   const handleBG = (type) => {

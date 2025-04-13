@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { PIXABAY_API_KEY } from "./global.js";
 
-import ResultCard from "./Components/ResultCard";
-import SearchBar from "./Components/SearchBar.js";
-import log from 'tailwindcss/lib/util/log';
+import ResultCard from "./Components/ResultCard.jsx";
+import SearchBar from "./Components/SearchBar.jsx";
 
 function App() {
   const [images, setImages] = useState([]);
@@ -13,7 +11,7 @@ function App() {
 
   useEffect(() => {
     fetch(
-      `https://pixabay.com/api/?key=${PIXABAY_API_KEY}&q=${term}&image_type=${selectedType}&pretty=true`
+      `https://pixabay.com/api/?key=${import.meta.env.VITE_PIXABAY_API_KEY}&q=${term}&image_type=${selectedType}&pretty=true`
     )
       .then((response) => response.json())
       .then((data) => {

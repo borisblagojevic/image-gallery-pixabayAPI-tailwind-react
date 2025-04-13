@@ -15,10 +15,13 @@ const Tags = ({ tags }) => {
     </span>);
   }
 
+const a = tags.slice(2);
+
   tagElements.push(
       <span className="inline-block bg-red-50 rounded-full px-3 py-1 mt-5 text-sm font-semibold text-gray-800 mr-2"
-        title={tags.join(' ')}>
-        +{tags.length}
+        key={a[1]}
+        title={a.join(' ')}>
+        +{a.length}
       </span>
   )
 
