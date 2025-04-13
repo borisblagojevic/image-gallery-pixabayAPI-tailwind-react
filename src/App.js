@@ -3,6 +3,7 @@ import { PIXABAY_API_KEY } from "./global.js";
 
 import ResultCard from "./Components/ResultCard";
 import SearchBar from "./Components/SearchBar.js";
+import log from 'tailwindcss/lib/util/log';
 
 function App() {
   const [images, setImages] = useState([]);
@@ -38,7 +39,7 @@ function App() {
       {isLoading ? (
         <h1 className="text-6xl text-center mx-auto">Loading</h1>
       ) : (
-        <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 justify-items-center gap-4 ">
+        <div className="grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 justify-items-center gap-4 auto-cols-min">
           {images.map((img) => (
             <ResultCard key={img.id} img={img} type={selectedType} />
           ))}

@@ -17,16 +17,20 @@ const ResultCard = ({ img, type }) => {
         return "bg-blue-500";
     }
   };
+  if (img.webformatHeight > 550)
+    return <></>
 
   if (type === img.type || type === "vector" || type === "all")
     return (
-      <div className="relative max-w-sm h-fit pb-4 rounded overflow-hidden shadow-lg">
+      <div className="relative max-w-sm h-fit pb-4 rounded overflow-hidden shadow-lg ">
         <figure className="overflow-hidden transi">
-          <img
-            src={img.webformatURL}
-            alt=""
-            className="w-full hover:duration-200 hover:ease-in hover:scale-150 hover:cursor-zoom-in hover:opacity-50"
-          />
+          <a target="_blank" rel="noopener noreferrer" href={img.largeImageURL}>
+            <img
+                src={img.webformatURL}
+                alt=""
+                className="w-full hover:duration-200 hover:ease-in hover:scale-150 hover:cursor-zoom-in hover:opacity-50"
+            />
+          </a>
         </figure>
         <span
           className={
@@ -40,7 +44,7 @@ const ResultCard = ({ img, type }) => {
 
         <div className="px-6 py-4 text-xs">
           <div className="font-bold text-red-300 text-l mb-2">
-            Photo made by <spam className="pl-2 text-red-700">{img.user}</spam>
+            Photo made by <span className="pl-2 text-red-700">{img.user}</span>
           </div>
           <ul>
             <li className="inline-block pr-2 text-gray-800">
