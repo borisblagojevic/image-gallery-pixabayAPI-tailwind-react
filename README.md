@@ -1,7 +1,6 @@
 # IMAGE GALLERY W/ PIXABAY API
 
-# [Live app](https://blagoja95.github.io/image-gallery-pixabayAPI-tailwind-react/)
-
+# [Live app](https://www.borisblagojevic.me/image-gallery-pixabayAPI-tailwind-react/)
 ## ABOUT
 
 This application allows its user to search the enormous amount of images using powerfull Pixabay API. Users can search any image by typing in a desired keyword like 'cats' or 'cars' and the get a list of images present that to the user as a card with image and data about that image. Filter those search results by selecting the type of image like photos, vectors and illustrations.
